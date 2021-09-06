@@ -7,12 +7,5 @@ public class AAA {
 	
 		System.out.println(11);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
+
 }
