@@ -43,7 +43,19 @@ body {font-size:16px;}
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
- <header>test</header>
+	<header>test</header>
+<input type="radio" id="e" name="지역" value="애월">애월<br>
+<input type="radio" id="f" name="지역" value="애월1">애월1<br>
+<input type="radio" id="a" name="지역" value="애월2">애월2<br>
+<input type="radio" id="s" name="지역" value="애월3">애월3<br>
+<input type="radio" id="d" name="지역" value="애월4">애월4<br>
+
+
+ <img src="images/jeju.jpg" style="width:100%" onclick="onClick(this)" alt="Concrete meets bricks">
+ 
+ 
+ 
+ 
 
 <!-- End page content -->
 </div>
