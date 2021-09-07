@@ -21,7 +21,7 @@ body {font-size:16px;}
   <div class="w3-container">
     <h3 class="w3-padding-64"><b>제주<br>관광<br>안내</b></h3>
   </div>
-  <div class="w3-bar-block">
+  <div class="w3-bar-b"WebContent/index.html"lock">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
     <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services</a> 

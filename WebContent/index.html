@@ -11,7 +11,6 @@ body {font-size:16px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
-<body>
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-orange w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
@@ -20,7 +19,7 @@ body {font-size:16px;}
     <h3 class="w3-padding-64"><b>제주도<br>유명한<br>4대명소</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="main.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
     <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
     <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
@@ -74,6 +73,11 @@ body {font-size:16px;}
     </div>
   </div>
 
+  <!-- 바뀌는 이미지 -->
+  <body onload="showImage()">
+  	<img id="introimg" border="0">
+ 
+
   <!-- Modal for full size images on click-->
   <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
     <span class="w3-button w3-black w3-xxlarge w3-display-topright">&times;</span>
@@ -103,7 +107,7 @@ body {font-size:16px;}
   <!-- 전화번호/지역 대충 집어넣어서 출력 -->
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-orange"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <hr style="width:50px;border:5px solid red" class="w3-round">
     <p>버그가 있으신가요? 저희에게 연락해주세요</p>
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
@@ -147,6 +151,23 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
+var imgArray=new Array(); 
+imgArray[0]="images/kitchenconcrete.jpg" 
+imgArray[1]="images/livingroom.jpg"
+imgArray[2]="images/diningroom.jpg"; 
+imgArray[4]="images/atrium.jpg" 
+imgArray[5]="images/bedroom.jpg" 
+imgArray[6]="images/livingroom2.jpg" 
+
+function showImage(){ 
+	var imgNum=Math.round(Math.random()*3); 
+	var objImg=document.getElementById("introimg"); 
+	objImg.src=imgArray[imgNum];
+	setTimeout(showImage,2000);
+}
+
+
 </script>
 
 </body>
