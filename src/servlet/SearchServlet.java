@@ -18,20 +18,20 @@ import model.dto.SightDTO;
 @WebServlet("/searchServ")
 public class SearchServlet extends HttpServlet {
 
-	protected List<SightDTO> search(String pp, String gg) {
-		System.out.println("여기에서 SQL과 연결" + pp + gg);
+	protected List<SightDTO> search(String region, String category) {
+		System.out.println("여기에서 SQL과 연결" + region + category);
 		try {
-			if (pp.equals("all")) {
-				if(gg.equals("all")) {
+			if (region.equals("all")) {
+				if(category.equals("all")) {
 					return SightDAO.selectAll();
 				}else {
-					return SightDAO.selectOnlyCategory(gg);
+					return SightDAO.selectOnlyCategory(category);
 				}
 			}else {
-				if(gg.equals("all")) {
-					return SightDAO.selectOnlyRegion(pp);
+				if(category.equals("all")) {
+					return SightDAO.selectOnlyRegion(region);
 				}else {
-					return SightDAO.selectNullString(gg, pp);
+					return SightDAO.selectNullString(category, region);
 				}
 			}
 		} catch (SQLException e) {
@@ -40,20 +40,20 @@ public class SearchServlet extends HttpServlet {
 		return null;
 	}
 	
-	protected List<SightDTO> searchString(String pp, String gg, String ff) {
-		System.out.println("여기에서 SQL과 연결" + pp + gg + ff );
+	protected List<SightDTO> searchString(String region, String category, String searchString) {
+		System.out.println("여기에서 SQL과 연결" + region + category + searchString );
 		try {
-			if (pp.equals("all")) {
-				if(gg.equals("all")) {
-					return SightDAO.selectOnlyString(ff);
+			if (region.equals("all")) {
+				if(category.equals("all")) {
+					return SightDAO.selectOnlyString(searchString);
 				}else {
-					return SightDAO.selectRegionall(gg, ff);
+					return SightDAO.selectRegionall(category, searchString);
 				}
 			}else {
-				if(gg.equals("all")) {
-					return SightDAO.selectCategoryall(pp, ff);
+				if(category.equals("all")) {
+					return SightDAO.selectCategoryall(region, searchString);
 				} else {
-					return SightDAO.select(pp, gg, ff);
+					return SightDAO.select(region, category, searchString);
 				}
 			}
 		}catch (SQLException e) {
