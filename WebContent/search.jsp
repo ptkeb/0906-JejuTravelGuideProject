@@ -21,6 +21,7 @@ body {font-size:16px;}
   <div class="w3-container">
     <h3 class="w3-padding-64"><b>제주도<br>유명한<br>4대명소</b></h3>
   </div>
+  
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="main.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
@@ -46,25 +47,24 @@ body {font-size:16px;}
 	   	<h1 class="w3-xxxlarge w3-text-orange"><b>검색하기</b></h1>
 	   	<hr style="width:50px;border:5px solid orange" class="w3-round">
 	   	<p>여기에서 검색하면 검색 페이지로 넘어가면서, 해당 결과물도 같이 출력 </p>
-
 	</div>
 
-	<form action="radioData" method = "post">
+	<form action="searchServ" method = "get">
 	<header class="w3-xlarge w3-text-orange">지역</header>
-		<input type="radio" id="region" name="지역" value="all">전체<br>
-		<input type="radio" id="region" name="지역" value="애월">애월<br>
-		<input type="radio" id="region" name="지역" value="우도">우도<br>
-		<input type="radio" id="region" name="지역" value="성산">성산<br>
+		<input type="radio" id="all" name="region" value="all">전체<br>
+		<input type="radio" id="애월" name="region" value="애월">애월<br>
+		<input type="radio" id="우도" name="region" value="우도">우도<br>
+		<input type="radio" id="성산" name="region" value="성산">성산<br>
 	
 	<br><header class="w3-xlarge w3-text-orange">분류</header>
-		<input type="radio" id="category" name="분류" value="all">전체<br>
-		<input type="radio" id="category" name="분류" value="nature">대충 자연명소<br>
-		<input type="radio" id="category" name="분류" value="sights">관광명소<br>
-		<input type="radio" id="category" name="분류" value="restaurant">식당<br>
-		<input type="radio" id="category" name="분류" value="hotel">숙박업소<br>
+		<input type="radio" id="all" name="category" value="all">전체<br>
+		<input type="radio" id="nature" name="category" value="nature">대충 자연명소<br>
+		<input type="radio" id="sights" name="category" value="sights">관광명소<br>
+		<input type="radio" id="restaurant" name="category" value="restaurant">식당<br>
+		<input type="radio" id="hotel" name="category" value="hotel">숙박업소<br>
 	
 	<br><header class="w3-xlarge w3-text-orange">검색</header>
-		<input type="search" class="w3-input w3-border" id="searchid" name="검색"/>
+		<input type="search" class="w3-input w3-border" id="searchString" name="searchString"/>
 	
 		<button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom">검색하기</button>
 	</form>
