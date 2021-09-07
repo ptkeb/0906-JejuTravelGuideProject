@@ -21,18 +21,17 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#main.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">signers.</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">packages.</a> 
+    <a href="main.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
+    <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span>제주</span>
+<header class="w3-container w3-top w3-hide-large w3-orange w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-orange w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>제주도 관광 안내</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
@@ -46,6 +45,18 @@ body {font-size:16px;}
     <h1 class="w3-jumbo"><b>혼저옵서예!</b></h1>
     <h1 class="w3-xxxlarge w3-text-orange"><b>WELCOME!</b></h1>
     <hr style="width:50px;border:5px solid orange" class="w3-round">
+  </div>
+
+<!-- 제주 큰지도 1 -->
+<img src="images/jeju.jpg" style="width:100%" onclick="onClick(this)" alt="제주 크게">
+
+<!-- 검색 기능 구현 1 -->
+  <div class="w3-container" id="search" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-orange"><b>검색하기</b></h1>
+    <hr style="width:50px;border:5px solid orange" class="w3-round">
+    <p>여기에서 검색하면 검색 페이지로 넘어가면서, 해당 결과물도 같이 출력 </p>
+    <p>
+    </p>
   </div>
 
   <!-- Photo grid (modal) -->
@@ -72,48 +83,31 @@ body {font-size:16px;}
     </div>
   </div>
 
-  <!-- Services -->
-  <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-orange"><b>Services.</b></h1>
-    <hr style="width:50px;border:5px solid orange" class="w3-round">
-    <p>여기에 </p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
-  </div>
+  
 
   <!-- Designers -->
   <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-orange"><b>Designers.</b></h1>
     <hr style="width:50px;border:5px solid orange" class="w3-round">
-    <p>The best team in the world.</p>
-    <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    <p>여기에 들어갈 기능 아무거나</p>
+    <p>
+    
     </p>
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
+    <p><b>로그인 하고 싶은데 필요가 없다</b>:</p>
   </div>
 
 
 
-  <!-- Packages / Pricing Tables -->
-  <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-orange"><b>Packages.</b></h1>
-    <hr style="width:50px;border:5px solid orange" class="w3-round">
-    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-  </div>
 
-
-
-  <!-- Contact -->
+  <!-- 연락처 -->
+  <!-- 전화번호/지역 대충 집어넣어서 출력 -->
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-orange"><b>Contact.</b></h1>
     <hr style="width:50px;border:5px solid orange" class="w3-round">
-    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <p>버그가 있으신가요? 저희에게 연락해주세요</p>
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
-        <label>Name</label>
+        <label>이름</label>
         <input class="w3-input w3-border" type="text" name="Name" required>
       </div>
       <div class="w3-section">
@@ -121,10 +115,10 @@ body {font-size:16px;}
         <input class="w3-input w3-border" type="text" name="Email" required>
       </div>
       <div class="w3-section">
-        <label>Message</label>
+        <label>메세지</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom">Send Message</button>
     </form>  
   </div>
 
