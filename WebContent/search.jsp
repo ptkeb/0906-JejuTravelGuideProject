@@ -49,6 +49,7 @@ body {font-size:16px;}
 	   	<p>여기에서 검색하면 검색 페이지로 넘어가면서, 해당 결과물도 같이 출력 </p>
 	</div>
 
+	<!-- search 구현부 -->
 	<form action="searchServ" method = "get">
 	<header class="w3-xlarge w3-text-orange">지역</header>
 		<input type="radio" id="all" name="region" value="all">전체<br>
@@ -68,8 +69,6 @@ body {font-size:16px;}
 	
 		<button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom">검색하기</button>
 	</form>
-
-
 
 <!-- End page content -->
 </div>
