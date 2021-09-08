@@ -31,7 +31,7 @@ public class SightDAO {
 		
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
-			all = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion="+Region+"and sightCategory="+Category).getResultList();
+			all = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+Region+" and sightCategory= "+Category).getResultList();
 		} finally {
 			em.close();
 			em=null;
@@ -47,7 +47,7 @@ public class SightDAO {
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
-			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightCategory="+Category+"and sightName="+SearchString).getResultList();
+			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightCategory= "+Category+" and sightName= "+SearchString).getResultList();
 		} finally {
 			em.close();
 			em=null;
@@ -63,7 +63,7 @@ public class SightDAO {
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
-			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion="+Region+"and sightName="+SearchString).getResultList();
+			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+Region+" and sightName= "+SearchString).getResultList();
 		} finally {
 			em.close();
 			em=null;
@@ -78,7 +78,7 @@ public class SightDAO {
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
-			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightName="+SearchString).getResultList();
+			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightName= "+SearchString).getResultList();
 		} finally {
 			em.close();
 			em=null;
@@ -94,7 +94,7 @@ public class SightDAO {
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
-			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion="+SearchString).getResultList();
+			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+SearchString).getResultList();
 		} finally {
 			em.close();
 			em=null;
@@ -106,11 +106,10 @@ public class SightDAO {
 	public static List<SightDTO> selectOnlyCategory(String Category) throws SQLException	{
 		EntityManager em = DBUtil.getEntityManager();
 		List<SightDTO> some = null;
-		
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
-			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightCategory="+Category).getResultList();
+			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightCategory= "+Category).getResultList();
 		} finally {
 			em.close();
 			em=null;
@@ -126,7 +125,7 @@ public class SightDAO {
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
-			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion="+Region+"and sightCategory="+Category+"and sightName="+SearchString).getResultList();
+			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+Region+" and sightCategory= "+Category+" and sightName= "+SearchString).getResultList();
 		} finally {
 			em.close();
 			em=null;

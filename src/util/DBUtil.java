@@ -29,7 +29,7 @@ public class DBUtil {
 	private static EntityManagerFactory emf;	
 	
 	static {
-		emf = Persistence.createEntityManagerFactory("step09_webJPA");
+		emf = Persistence.createEntityManagerFactory("step12_miniproject0906");
 	}
 	
 	public static EntityManager getEntityManager() throws SQLException {

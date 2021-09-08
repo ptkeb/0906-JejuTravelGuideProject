@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 import model.dao.SightDAO;
 import model.dto.SightDTO;
 
-
+// search controller
 @WebServlet("/searchServ")
 public class SearchServlet extends HttpServlet {
 
@@ -66,15 +66,18 @@ public class SearchServlet extends HttpServlet {
 		request.setCharacterEncoding("utf-8");
 		response.setContentType("text/html;charset=utf-8");	
 		PrintWriter out = response.getWriter();
-		
 		String region = request.getParameter("region");
 		String category = request.getParameter("category");
 		String search = request.getParameter("searchString");
 		
-		if(search == null) {
+		
+		if(search == "") {
 			if(region != null) {
 				out.print(region + category);
 				request.setAttribute("searchResult", search(region, category));
+				out.print(search(region, category));
+				request.getRequestDispatcher("searchData.jsp").forward(request, response);
+				// dispatcher로 다음 페이지로 데이터 이동
 			}else {
 				System.out.println("아마도 클릭 안하신듯 / 예외처리 하세요");
 			}
@@ -83,6 +86,8 @@ public class SearchServlet extends HttpServlet {
 			if(region != null) {
 				out.print(region + category + search);
 				request.setAttribute("searchResult", searchString(region, category, search));
+				out.print(searchString(region, category, search));
+				request.getRequestDispatcher("searchData.jsp").forward(request, response);
 			}else {
 				System.out.println("아마도 클릭 안하신듯 / 예외처리 하세요");
 			}
