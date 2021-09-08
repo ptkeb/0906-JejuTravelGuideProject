@@ -9,9 +9,10 @@
   </div>
   <div class="w3-bar-block">
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="main.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
+    <a href="seongsan.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
     <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
+    <a href="index.html#login" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
     <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">top</a>
   </div>
 </nav>
