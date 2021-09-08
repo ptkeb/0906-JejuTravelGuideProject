@@ -2,36 +2,18 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-	<link rel="stylesheet" href="css/seongsan.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link rel="stylesheet" href="css/seongsan.css">
 	<title>seongsan.jsp</title>
-</head>
-
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-orange w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>제주도<br>유명한<br>4대명소</b></h3>
-  </div>
-  <div class="w3-bar-block">
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="main.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
-    <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
-  </div>
-</nav>
+<jsp:include page="common/sidebar.jsp"/>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-orange w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-orange w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span>제주도 관광 안내</span>
-</header>
+<jsp:include page="common/header.jsp"/>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>

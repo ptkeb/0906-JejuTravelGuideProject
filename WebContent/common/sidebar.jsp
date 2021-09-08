@@ -13,6 +13,5 @@
     <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
     <a href="index.html#login" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
     <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">top</a>
   </div>
 </nav>
