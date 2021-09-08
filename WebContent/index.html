@@ -20,10 +20,12 @@ body {font-size:16px;}
   </div>
   <div class="w3-bar-block">
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="seongsan.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
+    <a href="main.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
     <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
-    <a href="index.html#login" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
-    <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
+    <a href="seongsan.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">성산</a>
+    
   </div>
 </nav>
 
@@ -55,23 +57,7 @@ body {font-size:16px;}
     <hr style="width:50px;border:5px solid orange" class="w3-round">
     <p>여기에서 검색하면 검색 페이지로 넘어가면서, 해당 결과물도 같이 출력 </p>
     <p>
-    
     </p>
-  </div>
-
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="제주 사진 1">
-      <img src="images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
-
-    <div class="w3-half">
-      <img src="images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
   </div>
 
   <!-- 바뀌는 이미지 -->
@@ -90,8 +76,8 @@ body {font-size:16px;}
 
   
 
-  <!-- 로그인기능 구현? -->
-  <div class="w3-container" id="login" style="margin-top:75px">
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
     <h1 class="w3-xxxlarge w3-text-orange"><b>Designers.</b></h1>
     <hr style="width:50px;border:5px solid orange" class="w3-round">
     <p>여기에 들어갈 기능 아무거나</p>
@@ -154,12 +140,9 @@ function onClick(element) {
 }
 
 var imgArray=new Array(); 
-imgArray[0]="images/kitchenconcrete.jpg" 
-imgArray[1]="images/livingroom.jpg"
-imgArray[2]="images/diningroom.jpg"; 
-imgArray[4]="images/atrium.jpg" 
-imgArray[5]="images/bedroom.jpg" 
-imgArray[6]="images/livingroom2.jpg" 
+imgArray[0]="images/광치기" 
+imgArray[1]="images/섭지코지"
+imgArray[2]="images/성산일출봉"; 
 
 function showImage(){ 
 	var imgNum=Math.round(Math.random()*3); 
