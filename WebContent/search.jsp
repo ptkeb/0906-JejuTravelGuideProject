@@ -34,7 +34,7 @@ body {font-size:16px;}
 	</div>
 
 	<!-- search 구현부 -->
-	<form action="searchServ" method = "get">
+	<form action="searchServ" method = "post">
 	<header class="w3-xlarge w3-text-orange">지역</header>
 		<input type="radio" id="all" name="region" value="all">전체<br>
 		<input type="radio" id="애월" name="region" value="'애월'">애월<br>

@@ -47,7 +47,7 @@ public class SightDAO {
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
-			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightCategory= "+Category+" and sightName= "+SearchString).getResultList();
+			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightCategory= "+Category+" and sightname like '"+SearchString+"%' or sightname like '%"+SearchString+"' or sightname like '%"+SearchString+"%'").getResultList();
 		} finally {
 			em.close();
 			em=null;
@@ -63,7 +63,7 @@ public class SightDAO {
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
-			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+Region+" and sightName= "+SearchString).getResultList();
+			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+Region+" and sightname like '"+SearchString+"%' or sightname like '%"+SearchString+"' or sightname like '%"+SearchString+"%'").getResultList();
 		} finally {
 			em.close();
 			em=null;
@@ -78,7 +78,7 @@ public class SightDAO {
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
-			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightName= "+SearchString).getResultList();
+			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightname like '"+SearchString+"%' or sightname like '%"+SearchString+"' or sightname like '%"+SearchString+"%'").getResultList();
 		} finally {
 			em.close();
 			em=null;
@@ -125,8 +125,8 @@ public class SightDAO {
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
-			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+Region+" and sightCategory= "+Category+" and sightName= "+SearchString).getResultList();
-		} finally {
+			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+Region+" and sightCategory= "+Category+" and sightname like '"+SearchString+"%' or sightname like '%"+SearchString+"' or sightname like '%"+SearchString+"%'").getResultList();
+		} finally {// sightname like "'"+SearchString+"%'" or sightname like "'%"+SearchString+"'" or sightname like "'%"+searchString+"%'"
 			em.close();
 			em=null;
 		}
