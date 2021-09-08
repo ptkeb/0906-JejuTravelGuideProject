@@ -3,13 +3,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>seongsan.jsp</title>
-<link rel="stylesheet" href="css/seongsan.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+	<link rel="stylesheet" href="css/seongsan.css">
+	<title>seongsan.jsp</title>
 </head>
 
-
-</head>
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-orange w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
@@ -18,20 +19,25 @@
     <h3 class="w3-padding-64"><b>제주도<br>유명한<br>4대명소</b></h3>
   </div>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#main.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Showcase</a> 
-    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Services.</a> 
-    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">signers.</a> 
-    <a href="#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">packages.</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="main.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
+    <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
+    <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
   </div>
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span>제주</span>
+<header class="w3-container w3-top w3-hide-large w3-orange w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-orange w3-margin-right" onclick="w3_open()">&#9776;</a>
+  <span>제주도 관광 안내</span>
 </header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
 
 <body>
 
@@ -73,9 +79,41 @@
 	카페와 레스토랑에서 잠시 쉬어가면 좋을 것 같다.
 	</p>
 	<br><hr><br>
+
+<script>
+	// Script to open and close sidebar
+	function w3_open() {
+	  document.getElementById("mySidebar").style.display = "block";
+	  document.getElementById("myOverlay").style.display = "block";
+	}
 	
+	function w3_close() {
+	  document.getElementById("mySidebar").style.display = "none";
+	  document.getElementById("myOverlay").style.display = "none";
+	}
 	
+	// Modal Image Gallery
+	function onClick(element) {
+	  document.getElementById("img01").src = element.src;
+	  document.getElementById("modal01").style.display = "block";
+	  var captionText = document.getElementById("caption");
+	  captionText.innerHTML = element.alt;
+	}
 	
+	// 바뀌는 이미지
+	var imgArray=new Array(); 
+	imgArray[0]="images/광치기" 
+	imgArray[1]="images/섭지코지"
+	imgArray[2]="images/성산일출봉"; 
 	
+	//바뀌는 이미지
+	function showImage(){ 
+		var imgNum=Math.round(Math.random()*3); 
+		var objImg=document.getElementById("introimg"); 
+		objImg.src=imgArray[imgNum];
+		setTimeout(showImage,2000);
+	}
+
+</script>	
 </body>
 </html>

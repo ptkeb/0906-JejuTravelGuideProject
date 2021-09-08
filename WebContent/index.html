@@ -24,6 +24,8 @@ body {font-size:16px;}
     <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
     <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
     <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
+    <a href="seongsan.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">성산</a>
+    
   </div>
 </nav>
 
@@ -56,21 +58,6 @@ body {font-size:16px;}
     <p>여기에서 검색하면 검색 페이지로 넘어가면서, 해당 결과물도 같이 출력 </p>
     <p>
     </p>
-  </div>
-
-  <!-- Photo grid (modal) -->
-  <div class="w3-row-padding">
-    <div class="w3-half">
-      <img src="images/kitchenconcrete.jpg" style="width:100%" onclick="onClick(this)" alt="제주 사진 1">
-      <img src="images/livingroom.jpg" style="width:100%" onclick="onClick(this)" alt="Light, white and tight scandinavian design">
-      <img src="images/diningroom.jpg" style="width:100%" onclick="onClick(this)" alt="White walls with designer chairs">
-    </div>
-
-    <div class="w3-half">
-      <img src="images/atrium.jpg" style="width:100%" onclick="onClick(this)" alt="Windows for the atrium">
-      <img src="images/bedroom.jpg" style="width:100%" onclick="onClick(this)" alt="Bedroom and office in one space">
-      <img src="images/livingroom2.jpg" style="width:100%" onclick="onClick(this)" alt="Scandinavian design">
-    </div>
   </div>
 
   <!-- 바뀌는 이미지 -->
@@ -153,12 +140,9 @@ function onClick(element) {
 }
 
 var imgArray=new Array(); 
-imgArray[0]="images/kitchenconcrete.jpg" 
-imgArray[1]="images/livingroom.jpg"
-imgArray[2]="images/diningroom.jpg"; 
-imgArray[4]="images/atrium.jpg" 
-imgArray[5]="images/bedroom.jpg" 
-imgArray[6]="images/livingroom2.jpg" 
+imgArray[0]="images/광치기" 
+imgArray[1]="images/섭지코지"
+imgArray[2]="images/성산일출봉"; 
 
 function showImage(){ 
 	var imgNum=Math.round(Math.random()*3); 
