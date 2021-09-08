@@ -13,6 +13,7 @@ public class SightDAO {
 	public static List<SightDTO> selectAll() throws SQLException {
 		EntityManager em = DBUtil.getEntityManager();
 		List<SightDTO> all = null;
+		System.out.println(1);
 		
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
@@ -28,6 +29,7 @@ public class SightDAO {
 	public static List<SightDTO> selectNullString(String Category, String Region) throws SQLException {
 		EntityManager em = DBUtil.getEntityManager();
 		List<SightDTO> all = null;
+		System.out.println(2);
 		
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
@@ -43,6 +45,7 @@ public class SightDAO {
 	public static List<SightDTO> selectRegionall(String Category, String SearchString) throws SQLException	{
 		EntityManager em = DBUtil.getEntityManager();
 		List<SightDTO> some = null;
+		System.out.println(3);
 		
 		try {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
@@ -64,6 +67,7 @@ public class SightDAO {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
 			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+Region+" and sightname like '"+SearchString+"%' or sightname like '%"+SearchString+"' or sightname like '%"+SearchString+"%'").getResultList();
+			System.out.println(4);
 		} finally {
 			em.close();
 			em=null;
@@ -79,6 +83,7 @@ public class SightDAO {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
 			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightname like '"+SearchString+"%' or sightname like '%"+SearchString+"' or sightname like '%"+SearchString+"%'").getResultList();
+			System.out.println(5);
 		} finally {
 			em.close();
 			em=null;
@@ -95,6 +100,7 @@ public class SightDAO {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
 			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+SearchString).getResultList();
+			System.out.println(6);
 		} finally {
 			em.close();
 			em=null;
@@ -110,6 +116,7 @@ public class SightDAO {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
 			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightCategory= "+Category).getResultList();
+			System.out.println(7);
 		} finally {
 			em.close();
 			em=null;
@@ -126,6 +133,7 @@ public class SightDAO {
 //			all = em.createNativeQuery("select * from Dept", Dept.class).getResultList();
 //			some = (List<SightDTO>)em.createQuery("select from Dept where "+ C).getResultList();
 			some = (List<SightDTO>)em.createQuery("select s from Sight s where sightRegion= "+Region+" and sightCategory= "+Category+" and sightname like '"+SearchString+"%' or sightname like '%"+SearchString+"' or sightname like '%"+SearchString+"%'").getResultList();
+			System.out.println(8);
 		} finally {// sightname like "'"+SearchString+"%'" or sightname like "'%"+SearchString+"'" or sightname like "'%"+searchString+"%'"
 			em.close();
 			em=null;

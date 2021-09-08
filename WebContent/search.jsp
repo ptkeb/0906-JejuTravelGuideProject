@@ -2,7 +2,8 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="ko">
-<title>W3.CSS Template</title>
+<title>찾아보기</title>
+<link rel="icon" href="images/제주1.png" type="image/x-icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -30,7 +31,6 @@ body {font-size:16px;}
 	<div class="w3-container" id="search" style="margin-top:75px">
 	   	<h1 class="w3-xxxlarge w3-text-orange"><b>검색하기</b></h1>
 	   	<hr style="width:50px;border:5px solid orange" class="w3-round">
-	   	<p>여기에서 검색하면 검색 페이지로 넘어가면서, 해당 결과물도 같이 출력 </p>
 	</div>
 
 	<!-- search 구현부 -->
@@ -48,7 +48,7 @@ body {font-size:16px;}
 		<input type="radio" id="맛집" name="category" value="'맛집'">식당<br>
 		<input type="radio" id="숙박" name="category" value="'숙박'">숙박업소<br>
 	
-	<br><header class="w3-xlarge w3-text-orange">검색</header>string == '우도' //지금 보내는 데이터 == 우도
+	<br><header class="w3-xlarge w3-text-orange">검색</header>
 		<input type="search" class="w3-input w3-border" id="searchString" name="searchString" value="'  '표시와 함께 정확하게 입력하세요 ">
 		<button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom">검색하기</button>
 	</form>

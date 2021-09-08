@@ -2,12 +2,14 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+<title>지역 정보</title>
+<link rel="icon" href="images/제주1.png" type="image/x-icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="css/seongsan.css">
-	<title>seongsan.jsp</title>
+	
 
 <!-- Sidebar/menu -->
 <jsp:include page="common/sidebar.jsp"/>

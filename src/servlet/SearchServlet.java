@@ -71,7 +71,7 @@ public class SearchServlet extends HttpServlet {
 		String search = request.getParameter("searchString");
 		
 		
-		if(search == "") {
+		if(search.equals("")) {
 			if(region != null) {
 				out.print(region + category);
 				request.setAttribute("searchResult", search(region, category));
