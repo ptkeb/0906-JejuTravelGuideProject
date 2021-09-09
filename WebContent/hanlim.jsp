@@ -8,11 +8,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/region.css">
+<link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
 
 	
 
 <!-- Sidebar/menu -->
-<jsp:include page="common/sidebar.jsp"/>
+<jsp:include page="common/sidebar2.jsp"/>
 
 <!-- Top menu on small screens -->
 <jsp:include page="common/header.jsp"/>
@@ -21,16 +23,16 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
+<body style="font-family:Cute font; text-align: center; font-size:32px; background-color:#EEFFF2">
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-<body>
 
-	<h1>한림읍</h1> <br>
-	<img alt="한림읍" src="images/한림읍.png">
+	<h1 style="font-family:Stylish; font-size:96px">한림읍</h1> <br>
+	<img alt="한림읍" src="images/한림읍.png"style="width: 1000px; height: auto;">
 	<br><hr><br>
 	
-	<h2>협재해수욕장</h2>
-	<img alt="협재해수욕장 사진" src="images/협재해수욕장.png">
+	<h2 style="font-family:Stylish; font-size:64px">협재해수욕장</h2>
+	<img alt="협재해수욕장 사진" src="images/협재해수욕장.png" style="width: 1000px; height: auto;">
 	<p>
 	제주의 여름을 대표하는 해수욕장하면 한림 협재해수욕장을 빼놓을 수 없다.<br>
 	반짝반짝 빛나는 모래사장 위로 투명한 에머랄드 빛 바다.<br>
@@ -39,8 +41,8 @@
 	</p>
 	<br><hr><br>
 	
-	<h2>비양도</h2>	
-  	<img alt="비양도 사진" src="images/비양도.png" />
+	<h2 style="font-family:Stylish; font-size:64px">비양도</h2>	
+  	<img alt="비양도 사진" src="images/비양도.png" style="width: 1000px; height: auto;"/>
 	<p>
 	한림항에서 도항선을 타고 15분이면 비양도에 도착한다.<br>
 	화산섬으로 중앙에는 비양봉이 있는 둥그런 모양이다.<br>
@@ -51,8 +53,8 @@
 	</p>
 	<br><hr><br>
 	
-	<h2>금능해수욕장</h2>
-	<img alt="금능해수욕장 사진" src="images/금능해수욕장.png">
+	<h2 style="font-family:Stylish; font-size:64px">금능해수욕장</h2>
+	<img alt="금능해수욕장 사진" src="images/금능해수욕장.png" style="width: 1000px; height: auto;">
 	<p>
 	협재해수욕장 바로 옆에 쌍둥이 해변으로 불리는 금능해수욕장이있다.<br>
 	물이 빠지면 넓고 고운 모래사장이 훤하게 드러난다.<br>
@@ -61,7 +63,7 @@
 	금능해수욕장은 야자수가 많아 이국적인 느낌으로 캠핑을 즐길 수 있다. 서쪽여행의 묘미, 지는 해의 멋진 노을도 놓치지 말고 사진으로 남겨두자.
 	</p>
 	<br><hr><br>
-
+</div>
 <script>
 	// Script to open and close sidebar
 	function w3_open() {

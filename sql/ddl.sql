@@ -6,7 +6,8 @@ CREATE TABLE sight (
        sightid          			VARCHAR2(20) PRIMARY KEY,
        sightname               		VARCHAR2(40) NOT NULL,
        sightregion         			VARCHAR2(20) NOT NULL,
-       sightcategory                VARCHAR2(10) NOT NULL
+       sightcategory                VARCHAR2(10) NOT NULL,
+       imagepath       					VARCHAR2(1000)
 );
 
 CREATE TABLE category (

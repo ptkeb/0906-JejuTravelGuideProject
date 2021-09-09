@@ -8,7 +8,7 @@
   <hr style="width:260px;border:4px solid red" class="w3-round">
   <div class="w3-bar-block w3-center">
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="seongsan.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
+    <a href="region.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
     <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
     <a href="addSight.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">장소 등록하기</a> 
     <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>

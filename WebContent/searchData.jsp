@@ -14,7 +14,7 @@
 	<c:forEach items="${requestScope.searchResult}" var="data">
 		 <tr>
 		 	<td>${data.sightName}</td>
-		 	<td><img src="images/${data.sightName}.png" style="width:500px"></td>
+		 	<td><img src="${data.imagePath}" style="width:500px"></td>
 		 	<td>${data.sightRegion}</td>
 		 	<td>${data.sightCategory}</td>
 		 </tr>

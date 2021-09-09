@@ -21,4 +21,5 @@ public class Sight {
 	private String sightName;
 	private String sightRegion;
 	private String sightCategory;
+	private String imagePath;
 }

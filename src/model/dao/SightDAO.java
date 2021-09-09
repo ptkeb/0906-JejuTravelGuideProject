@@ -146,13 +146,13 @@ public class SightDAO {
 		return some;
 	}
 	
-	public static void insert(String id, String name, String Region, String Category) throws SQLException	{
+	public static void insert(String id, String name, String Region, String Category, String url) throws SQLException	{
 		EntityManager em = DBUtil.getEntityManager();
 		EntityTransaction tx = em.getTransaction();
 		try {
 			if(em.find(Sight.class, id) == null) {
 				tx.begin();
-				Sight s1 = new Sight(id,name,Region,Category);
+				Sight s1 = new Sight(id,name,Region,Category,url);
 				em.persist(s1);
 				tx.commit();
 				System.out.println(em.find(Sight.class,id));

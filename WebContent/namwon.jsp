@@ -8,11 +8,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="css/region.css">
+<link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
 
 	
 
 <!-- Sidebar/menu -->
-<jsp:include page="common/sidebar.jsp"/>
+<jsp:include page="common/sidebar2.jsp"/>
 
 <!-- Top menu on small screens -->
 <jsp:include page="common/header.jsp"/>
@@ -21,16 +23,16 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
+<body style="font-family:Cute font; text-align: center; font-size:32px; background-color:#EEFFF2">
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-<body>
 
-	<h1>남원읍</h1> <br>
-	<img alt="남원읍" src="images/남원읍.png">
+	<h1 style="font-family:Stylish; font-size:96px">남원읍</h1> <br>
+	<img alt="남원읍" src="images/남원읍.png" style="width: 1000px; height: auto;">
 	<br><hr><br>
 	
-	<h2>큰엉해안경승지</h2>
-	<img alt="큰엉해안경승지 사진" src="images/큰엉해안경승지.png">
+	<h2 style="font-family:Stylish; font-size:64px">큰엉해안경승지</h2>
+	<img alt="큰엉해안경승지 사진" src="images/큰엉해안경승지.png" style="width: 1000px; height: auto;">
 	<p>
 	'큰엉'은 바닷가나 절벽 등에 뚫린 바위그늘을 일컫는 제주 방언으로, 쉽게 말해 큰 언덕이라는 뜻이다.<br>
 	화산 용암 덩어리와 바다가 만나 아름다운 해안 절경을 만든 ‘남원 큰엉해안경승지’는 한반도 모양의 포토 스폿으로 많이 알려졌는데,<br>
@@ -41,8 +43,8 @@
 	</p>
 	<br><hr><br>
 	
-	<h2>제주동백마을</h2>	
-	<img alt="제주동백마을" src="images/제주동백마을.png">
+	<h2 style="font-family:Stylish; font-size:64px">제주동백마을</h2>	
+	<img alt="제주동백마을" src="images/제주동백마을.png" style="width: 1000px; height: auto;">
 	<p>
 	남원읍에는 위미리의 '동백 군락지'와 '동백 수목원', '동박낭 카페', 그리고 신례리의 '동백포레스트', 신흥리의 '경흥농원' 등 동백꽃을 볼 수 있는 명소가 참 많다.<br>
 	그중 ‘제주 동백 마을’로 불리는 신흥리는 동백 마을 300주년을 맞이해, 이를 기념하여 마을 곳곳에 300그루의 동백나무를 더 심었다고 하니 꽃이 만개하는 시기엔 얼마나 아름다울지 기대된다.<br>
@@ -51,8 +53,8 @@
 	</p>
 	<br><hr><br>
 	
-	<h2>휴애리 자연생활농원</h2>
-	<img alt="자연생활농원 사진" src="images/자연생활농원.png">
+	<h2 style="font-family:Stylish; font-size:64px">휴애리 자연생활농원</h2>
+	<img alt="자연생활농원 사진" src="images/자연생활농원.png" style="width: 1000px; height: auto;">
 	<p>
 	남쪽 마을의 겨울엔 탐스러운 귤이 잔뜩이다. 돌담길을 따라 걷다가 나뭇잎 사이로 얼굴을 내민 주황빛 열매를 마주칠 때마다 기분이 좋아진다. <br>
 	우연히 만난 귤 밭에서도 예쁜 사진을 찍을 순 있겠지만, 함부로 남의 집 담장 안을 들어가거나 아무 귤이나 따서 맛볼 수는 없는 노릇.<br>
@@ -63,7 +65,7 @@
 	5시면 문을 닫으니 늦어도 4시 반까지는 도착하는 게 좋다.
 	</p>
 	<br><hr><br>
-
+</div>
 <script>
 	// Script to open and close sidebar
 	function w3_open() {

@@ -17,14 +17,14 @@ body {font-size:32px;}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-orange w3-collapse w3-top w3-xxlarge w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
-  	<img src="images/제주관광.jpg" style="width:140px; height:140px; margin-top: 20px; margin-left: 60px; margin-right: auto" >    
+  	<img src="images/제주관광.jpg" style="width:140px; height:140px; margin-top: 20px; margin-left: 64px; margin-right: auto" >    
   	<h3 class="w3-padding-small w3-center" style="margin-top: 20px"><b style="font-family:Cute font; font-size:58px">제주도<br>관광<br>안내서</b></h3>
   <hr style="width:260px;border:4px solid red" class="w3-round">
   <div class="w3-bar-block w3-center">
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="region.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
     <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
-    <a href="index.html#login" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">장소 등록하기</a> 
+    <a href="addSight.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">장소 등록하기</a> 
     <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
   </div>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:32px">메뉴 닫기</a>
@@ -63,19 +63,13 @@ body {font-size:32px;}
 
 <!-- 검색 기능 구현 1 -->
   <div class="w3-container" id="search" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-orange"><a href="search.jsp">검색 바로가기</a></h1>
+    <h1 class="w3-xxxlarge w3-text-orange"><a href="search.jsp" style="font-size:64px; text-decoration: none;">검색 바로가기</a></h1>
   </div>
 
 
   <!-- 로그인 구현좀 -->
-  <div class="w3-container" id="login" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-orange"><b>Designers.</b></h1>
-    <hr style="width:50px;border:5px solid orange" class="w3-round">
-    <p>여기에 들어갈 기능 아무거나</p>
-    <p>
-    
-    </p>
-    <p><b>로그인 하고 싶은데 필요가 없다</b>:</p>
+  <div class="w3-container" id="search" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-orange"><a href="addSight.jsp" style="font-size:64px; text-decoration: none;">등록하기 바로가기</a></h1>
   </div>
 
 
@@ -84,7 +78,7 @@ body {font-size:32px;}
   <!-- 연락처 -->
   <!-- 전화번호/지역 대충 집어넣어서 출력 -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-orange"><b>Contact.</b></h1>
+    <h1 class="w3-xxxlarge w3-text-orange"><b>연락해주세요</b></h1>
     <hr style="width:50px;border:5px solid orange" class="w3-round">
     <p>버그가 있으신가요? 저희에게 연락해주세요</p>
     <form action="/action_page.php" target="_blank">
@@ -100,7 +94,7 @@ body {font-size:32px;}
         <label>메세지</label>
         <input class="w3-input w3-border" type="text" name="Message" required>
       </div>
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom">Send Message</button>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom">사실 이기능은 없습니다</button>
     </form>  
   </div>
 
