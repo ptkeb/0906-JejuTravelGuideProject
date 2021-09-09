@@ -7,7 +7,7 @@
     <h3 class="w3-padding-small w3-center" style="margin-top: 20px"><b style="font-family:Cute font; font-size:58px">제주도<br>관광<br>안내서</b></h3>
   <hr style="width:260px;border:4px solid red" class="w3-round">
   <div class="w3-bar-block w3-center">
-    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">올레</a> 
     <a href="region.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
     <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
     <a href="addSight.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">장소 등록하기</a> 
