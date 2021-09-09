@@ -1,0 +1,26 @@
+body {	
+	text-align: center;
+}
+
+table {
+    width:70%; 
+    margin-left:15%; 
+    margin-right:15%;
+}
+
+table, td, th {
+    border-collapse : collapse;
+    border : 1px solid black;
+};
+
+
+img {
+	
+	display: block;
+	width: 50%;
+	height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
