@@ -8,9 +8,9 @@
 <br>
 <br>
 
-<table border="1" style="margin:0px auto; width:auto">
+<table border="1" style="margin-left: auto; margin-right: auto; width:auto; font-family:Cute font; text-align: center; font-size:32px; background-color:#EEFFF2" >
 	<tr>   
-		<th>지역이름</th><th>사진</th><th>지역</th><th>분류</th>
+		<th style="width:200px">지역이름</th><th style="width:500px">사진</th><th style="width:200px">지역</th><th style="width:200px">분류</th>
 	<c:forEach items="${requestScope.searchResult}" var="data">
 		 <tr>
 		 	<td>${data.sightName}</td>
