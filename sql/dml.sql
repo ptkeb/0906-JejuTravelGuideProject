@@ -9,3 +9,5 @@ insert into sight values('섭지', '섭지코지', '성산읍', '명소');
 insert into sight values('천지연', '천지연폭포', '서귀포시', '자연');
 insert into sight values('홍조', '홍조단괴해변', '우도면', '명소');
 insert into sight values('마라도', '마라도', '마라도', '명소');
+
+commit;
