@@ -65,6 +65,8 @@
 	</p>
 	<br><hr><br>
 </div>
+<div class="w3-yellow w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://github.com/ptkeb" title="대안" target="_blank" class="w3-hover-opacity">대안</a>&<a href="https://github.com/minstitia" title="상민" target="_blank" class="w3-hover-opacity">상민</a></p></div>
+
 <script>
 	// Script to open and close sidebar
 	function w3_open() {
@@ -77,6 +79,7 @@
 	  document.getElementById("myOverlay").style.display = "none";
 	}
 	
+
 	//바뀌는 이미지
 	function showImage(){ 
 		var imgNum=Math.round(Math.random()*3); 
@@ -84,6 +87,7 @@
 		objImg.src=imgArray[imgNum];
 		setTimeout(showImage,2000);
 	}
+
 
 </script>	
 </body>

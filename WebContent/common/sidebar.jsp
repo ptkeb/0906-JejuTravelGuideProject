@@ -10,7 +10,7 @@
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="seongsan.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
     <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
-    <a href="index.html#login" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">장소 등록하기</a> 
+    <a href="addSight.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">장소 등록하기</a> 
     <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
   </div>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:32px">메뉴 닫기</a>
