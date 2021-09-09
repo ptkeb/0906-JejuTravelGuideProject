@@ -11,7 +11,7 @@ CREATE TABLE sight (
 
 CREATE TABLE category (
        categoryid        			VARCHAR2(20) PRIMARY KEY,
-       categoryname                		VARCHAR2(20) NOT NULL,
+       categoryname                		VARCHAR2(20) NOT NULL
 );
 
-ALTER TABLE sight  ADD FOREIGN KEY (sightcategory) REFERENCES recipient  (categoryid);
+ALTER TABLE sight  ADD FOREIGN KEY (sightcategory) REFERENCES category  (categoryid);
