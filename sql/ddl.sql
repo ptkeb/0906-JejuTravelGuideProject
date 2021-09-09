@@ -4,9 +4,9 @@ DROP TABLE category cascade constraint;
 
 CREATE TABLE sight (
        sightid          			VARCHAR2(20) PRIMARY KEY,
-       sightname               		VARCHAR2(20) NOT NULL,
+       sightname               		VARCHAR2(40) NOT NULL,
        sightregion         			VARCHAR2(20) NOT NULL,
-       sightcategory                VARCHAR2(50) NOT NULL
+       sightcategory                VARCHAR2(10) NOT NULL
 );
 
 CREATE TABLE category (
