@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-<link rel="stylesheet" href="css/seongsan.css">
+<link rel="stylesheet" href="css/region.css">
 <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
 
@@ -76,20 +76,6 @@
 	  document.getElementById("mySidebar").style.display = "none";
 	  document.getElementById("myOverlay").style.display = "none";
 	}
-	
-	// Modal Image Gallery
-	function onClick(element) {
-	  document.getElementById("img01").src = element.src;
-	  document.getElementById("modal01").style.display = "block";
-	  var captionText = document.getElementById("caption");
-	  captionText.innerHTML = element.alt;
-	}
-	
-	// 바뀌는 이미지
-	var imgArray=new Array(); 
-	imgArray[0]="images/광치기" 
-	imgArray[1]="images/섭지코지"
-	imgArray[2]="images/성산일출봉"; 
 	
 	//바뀌는 이미지
 	function showImage(){ 
