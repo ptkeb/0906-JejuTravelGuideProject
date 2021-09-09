@@ -6,14 +6,14 @@
 <link rel="icon" href="images/제주1.png" type="image/x-icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="css/region.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
 
 <!-- Sidebar/menu -->
-<jsp:include page="common/sidebar.jsp"/>
+<jsp:include page="common/sidebar2.jsp"/>
 
 <!-- Top menu on small screens -->
 <jsp:include page="common/header.jsp"/>
@@ -22,16 +22,16 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<body style="font-family:Cute font; font-size:32px; background-color:#EEFFF2">
+<body style="font-family:Cute font; text-align: center; font-size:32px; background-color:#EEFFF2">
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
 
 	<h1 style="font-family:Stylish; font-size:96px">제주 성산</h1> <br>
-	<img alt="제주마을지도_성산읍" src="images/제주마을지도_성산읍.jpg">
+	<img alt="제주마을지도_성산읍" src="images/제주마을지도_성산읍.jpg" style="width: 1000px; height: auto;">
 	<br><hr><br>
 	
 	<h2 style="font-family:Stylish; font-size:64px">성산일출봉</h2>
-	<img alt="성산일출봉" src="images/성산일출봉.png">
+	<img alt="성산일출봉" src="images/성산일출봉.png" style="width: 1000px; height: auto;">
 	<p>
 	과거 신혼여행이나 수학여행으로 제주를 찾던 관광객들의 필수 코스였을 ’성산일출봉‘은 뻔한 관광지이지만 그래도 빼놓을 수 없는 명소 중 하나이다.<br>
 	푸른 바다 위에 우뚝 솟은 모양이 감탄을 자아내며 천연기념물로 지정될 만큼 지질학적으로도 높은 가치를 지녔다. 탐방로는 두 개로 나뉘는데,<br>
@@ -43,7 +43,7 @@
 	<br><hr><br>
 	
 	<h2 style="font-family:Stylish; font-size:64px">광치기 해변</h2>	
-	<img alt="광치기 해변 사진" src="images/광치기해변.png">
+	<img alt="광치기 해변 사진" src="images/광치기해변.png" style="width: 1000px; height: auto;">
 	<p>
 	성산일출봉에서 섭지코지로 향하는 길목에 있는 광치기 해변은 제주올레 1코스의 마지막이자 2코스가 시작되는 곳이다.<br>
 	펄펄끓던 용암이 바다와 만나 빠르게 굳어지며 형성된 지질구조가 특징이며, 특히 썰물때는 바닷물에 가려있던 비경들이 속속들이 들어나 숨은 비경을 선사한다.<br>
@@ -54,7 +54,7 @@
 	<br><hr><br>
 	
 	<h2 style="font-family:Stylish; font-size:64px" >섭지코지</h2>
-	<img alt="섭지코지 사진" src="images/섭지코지.png">
+	<img alt="섭지코지 사진" src="images/섭지코지.png" style="width: 1000px; height: auto;">
 	<p>
 	각종 드라마와 영화 촬영지로 알려지면서 많은 관광객이 찾기 시작한 ’섭지코지‘는 성산 지역을 대표하는 명소로 손꼽히는 곳이다.<br>
 	길을 따라 오르며 바다를 바라보는 것도 좋지만, 살짝 숨이 가빠 올 무렵 잠시 걸음을 멈추고 뒤돌아봤을 때 펼쳐지는 풍경이 장관이다.<br>

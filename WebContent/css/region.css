@@ -1,5 +1,5 @@
 body {	
-	text-align: center;
+	
 }
 
 table {
@@ -17,9 +17,9 @@ table, td, th {
 img {
 	
 	display: block;
-	width: 50%;
-	height: 50%;
-	margin-left: auto;
+	width: 1000px;
+	height: auto;
+	margin-left: 60px;
 	margin-right: auto;
 }
 
