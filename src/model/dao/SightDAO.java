@@ -4,6 +4,8 @@ import java.sql.SQLException;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Query;
 
 import model.dto.SightDTO;
 import model.entity.Sight;
@@ -144,4 +146,29 @@ public class SightDAO {
 		return some;
 	}
 	
+	public static void insert(String id, String name, String Region, String Category) throws SQLException	{
+		EntityManager em = DBUtil.getEntityManager();
+		EntityTransaction tx = em.getTransaction();
+		try {
+			if(em.find(Sight.class, id) == null) {
+				tx.begin();
+				Sight s1 = new Sight(id,name,Region,Category);
+				em.persist(s1);
+				tx.commit();
+				System.out.println(em.find(Sight.class,id));
+			}else {
+				System.out.println("망한듯?");
+				System.out.println(em.find(Sight.class,id));
+
+			}
+			
+//			Query query = em.createNativeQuery("insert into Sight(sightId, sightName, sightRegion, sightCategory)"+" values ('"+id+"','"+name+"','"+Region+"','"+Category+"')");
+//			query.executeUpdate();
+		}finally {
+			em.close();
+			em=null;
+		}
+	
+	
+	}
 }
