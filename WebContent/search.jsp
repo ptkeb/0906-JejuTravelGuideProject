@@ -57,7 +57,7 @@ body {font-size:24px;}
 </div>
 
 <!-- W3.CSS Container -->
-<div class="w3-yellow w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+<div class="w3-yellow w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://github.com/ptkeb" title="대안" target="_blank" class="w3-hover-opacity">대안</a>&<a href="https://github.com/minstitia" title="상민" target="_blank" class="w3-hover-opacity">상민</a></p></div>
 
 <script>
 // Script to open and close sidebar

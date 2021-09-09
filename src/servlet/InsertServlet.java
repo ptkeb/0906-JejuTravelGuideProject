@@ -28,9 +28,13 @@ public class InsertServlet extends HttpServlet {
 		String name = request.getParameter("name");
 		String region = request.getParameter("region");
 		String category = request.getParameter("category");
-	
+		request.setAttribute("id", id);
+		request.setAttribute("name", name);
+		request.setAttribute("region", region);
+		request.setAttribute("category", category);
 		try {
 			SightDAO.insert(id, name, region, category);
+			request.getRequestDispatcher("added.jsp").forward(request, response);
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
