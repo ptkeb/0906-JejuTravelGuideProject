@@ -29,27 +29,27 @@ body {font-size:24px;}
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 	
 	<div class="w3-container" id="search" style="margin-top:75px">
-	   	<h1 class="w3-text-orange" style="font-size:64px"><b>검색하기</b></h1>
+	   	<h1 class="w3-text-orange" style="font-size:96px"><b>검색하기</b></h1>
 	   	<hr style="width:50px;border:5px solid orange" class="w3-round">
 	</div>
 
 	<!-- search 구현부 -->
 	<form action="searchServ" method = "post">
-	<header class="w3-xlarge w3-text-orange">지역</header>
-		<input type="radio" id="all" name="region" value="all">전체<br>
+	<header class="w3-xxxlarge w3-text-orange">지역</header>
+		<input type="radio" id="all" name="region" value="all" checked="checked">전체<br>
 		<input type="radio" id="애월" name="region" value="'애월'">애월<br>
 		<input type="radio" id="우도" name="region" value="'우도'">우도<br>
 		<input type="radio" id="성산" name="region" value="'성산'">성산<br>
 	
-	<br><header class="w3-xlarge w3-text-orange">분류</header>
-		<input type="radio" id="all" name="category" value="all">전체<br>
+	<br><header class="w3-xxxlarge w3-text-orange">분류</header>
+		<input type="radio" id="all" name="category" value="all" checked="checked">전체<br>
 		<input type="radio" id="자연" name="category" value="'자연'">대충 자연명소<br>
 		<input type="radio" id="명소" name="category" value="'명소'">관광명소<br>
 		<input type="radio" id="맛집" name="category" value="'맛집'">식당<br>
 		<input type="radio" id="숙박" name="category" value="'숙박'">숙박업소<br>
 	
-	<br><header class="w3-xlarge w3-text-orange">검색</header>
-		<input type="search" class="w3-input w3-border" id="searchString" name="searchString" value="'  '표시와 함께 정확하게 입력하세요 ">
+	<br><header class="w3-xxxlarge w3-text-orange">검색</header>
+		<input type="search" class="w3-input w3-border" id="searchString" name="searchString" placeholder="찾으시려는 단어를 입력하세요">
 		<button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom">검색하기</button>
 	</form>
 
