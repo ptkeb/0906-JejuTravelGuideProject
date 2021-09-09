@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang=ko>
 <title>지역 정보</title>
 <link rel="icon" href="images/제주1.png" type="image/x-icon">
 <meta charset="UTF-8">
@@ -9,7 +9,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="css/seongsan.css">
-	
+<link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
 
 <!-- Sidebar/menu -->
 <jsp:include page="common/sidebar.jsp"/>
@@ -21,15 +22,15 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
+<body style="font-family:Cute font; font-size:32px; background-color:#DBFFE3">
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-<body>
 
-	<h1>제주 성산</h1> <br>
+	<h1 style="font-family:Stylish; font-size:96px">제주 성산</h1> <br>
 	<img alt="제주마을지도_성산읍" src="images/제주마을지도_성산읍.jpg">
 	<br><hr><br>
 	
-	<h2>성산일출봉</h2>
+	<h2 style="font-family:Stylish; font-size:64px">성산일출봉</h2>
 	<img alt="성산일출봉" src="images/성산일출봉.png">
 	<p>
 	과거 신혼여행이나 수학여행으로 제주를 찾던 관광객들의 필수 코스였을 ’성산일출봉‘은 뻔한 관광지이지만 그래도 빼놓을 수 없는 명소 중 하나이다.<br>
@@ -41,7 +42,7 @@
 	</p>
 	<br><hr><br>
 	
-	<h2>광치기 해변</h2>	
+	<h2 style="font-family:Stylish; font-size:64px">광치기 해변</h2>	
 	<img alt="광치기 해변 사진" src="images/광치기.jpg">
 	<p>
 	성산일출봉에서 섭지코지로 향하는 길목에 있는 광치기 해변은 제주올레 1코스의 마지막이자 2코스가 시작되는 곳이다.<br>
@@ -52,7 +53,7 @@
 	</p>
 	<br><hr><br>
 	
-	<h2>섭지코지</h2>
+	<h2 style="font-family:Stylish; font-size:64px" >섭지코지</h2>
 	<img alt="섭지코지 사진" src="images/섭지코지.png">
 	<p>
 	각종 드라마와 영화 촬영지로 알려지면서 많은 관광객이 찾기 시작한 ’섭지코지‘는 성산 지역을 대표하는 명소로 손꼽히는 곳이다.<br>
@@ -63,7 +64,7 @@
 	카페와 레스토랑에서 잠시 쉬어가면 좋을 것 같다.
 	</p>
 	<br><hr><br>
-
+</div>
 <script>
 	// Script to open and close sidebar
 	function w3_open() {

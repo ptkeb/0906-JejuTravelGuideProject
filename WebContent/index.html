@@ -6,48 +6,49 @@
 <link rel="icon" href="images/제주1.png" type="image/x-icon">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href="https://fonts.googleapis.com/css2?family=Cute+Font&display=swap" rel="stylesheet">
+
 <style>
-body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
-body {font-size:16px;}
+body,h1,h2,h3,h4,h5 {font-family: "Cute font", Poppins, sans-serif}
+body {font-size:32px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-orange w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
-    <h3 class="w3-padding-64"><b>제주도<br>유명한<br>4대명소</b></h3>
-  </div>
-  <div class="w3-bar-block">
+<nav class="w3-sidebar w3-orange w3-collapse w3-top w3-xxlarge w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar">
+  	<img src="images/우도.png" style="width:240px; height:140px; margin-top: 20px; margin-left: 10px; margin-right: auto" >    <h3 class="w3-padding-small w3-center" style="margin-top: 20px"><b style="font-family:Cute font; font-size:58px">제주도<br>관광<br>안내서</b></h3>
+  <hr style="width:260px;border:4px solid red" class="w3-round">
+  <div class="w3-bar-block w3-center">
     <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="seongsan.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">지역소개</a> 
     <a href="search.jsp" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">검색하기</a> 
-    <a href="index.html#login" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Placeholder</a> 
+    <a href="index.html#login" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">장소 등록하기</a> 
     <a href="index.html#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">연락처</a>
-    
   </div>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:32px">메뉴 닫기</a>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-orange w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-orange w3-margin-right" onclick="w3_open()">&#9776;</a>
-  <span>제주도 관광 안내</span>
+  <span style="font-family:Cute font; font-size:32px">제주도 관광 안내</span>
 </header>
 
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
+<body style="font-family:Cute font; font-size:32px; background-color:#EEFFF2">
+
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>혼저옵서예!</b></h1>
+    <h1 style="font-size:96px"><b>혼저옵서예!</b></h1>
     <h1 class="w3-xxxlarge w3-text-orange"><b>WELCOME!</b></h1>
     <hr style="width:50px;border:5px solid orange" class="w3-round">
   </div>
-
 <!-- 제주 큰지도 1 -->
 <img src="images/jeju.jpg" style="width:100%" onclick="onClick(this)" alt="제주 크게">
 
@@ -131,7 +132,7 @@ body {font-size:16px;}
 <a href="#">totop</a>
 <!-- End page content -->
 </div>
-
+</body>
 <!-- W3.CSS Container -->
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
 
