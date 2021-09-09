@@ -37,8 +37,8 @@ body {font-size:24px;}
 	<form action="searchServ" method = "post">
 	<header class="w3-xxxlarge w3-text-orange">지역</header>
 		<input type="radio" id="all" name="region" value="all" checked="checked">전체<br>
-		<input type="radio" id="애월" name="region" value="'애월'">애월<br>
-		<input type="radio" id="우도" name="region" value="'우도'">우도<br>
+		<input type="radio" id="남원읍" name="region" value="'남원읍'">남원읍<br>
+		<input type="radio" id="한림읍" name="region" value="'한림읍'">한림읍<br>
 		<input type="radio" id="성산" name="region" value="'성산'">성산<br>
 	
 	<br><header class="w3-xxxlarge w3-text-orange">분류</header>

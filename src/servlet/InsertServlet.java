@@ -19,10 +19,10 @@ import model.dao.SightDAO;
 @WebServlet("/insertServ")
 
 public class InsertServlet extends HttpServlet {
-	
+
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
-		response.setContentType("text/html;charset=utf-8");	
+		response.setContentType("text/html;charset=utf-8");
 		PrintWriter out = response.getWriter();
 		String id = request.getParameter("simpleName");
 		String name = request.getParameter("name");
@@ -41,7 +41,7 @@ public class InsertServlet extends HttpServlet {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-	
+
 	}
 
 }
