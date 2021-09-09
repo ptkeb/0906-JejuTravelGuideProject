@@ -15,7 +15,7 @@ body {font-size:24px;}
 .w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
 .w3-half img:hover{opacity:1}
 </style>
-<body style="font-family:Cute font; font-size:32px; background-color:#DBFFE3">
+<body style="font-family:Cute font; font-size:32px; background-color:#EEFFF2">
 <!-- Sidebar/menu -->
 <jsp:include page="common/sidebar.jsp"/>
 

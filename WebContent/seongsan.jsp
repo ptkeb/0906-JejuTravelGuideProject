@@ -22,7 +22,7 @@
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<body style="font-family:Cute font; font-size:32px; background-color:#DBFFE3">
+<body style="font-family:Cute font; font-size:32px; background-color:#EEFFF2">
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
 
