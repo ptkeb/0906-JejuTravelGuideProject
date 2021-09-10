@@ -39,7 +39,7 @@ body {font-size:24px;}
 		<input type="radio" id="all" name="region" value="all" checked="checked">전체<br>
 		<input type="radio" id="남원읍" name="region" value="'남원읍'">남원읍<br>
 		<input type="radio" id="한림읍" name="region" value="'한림읍'">한림읍<br>
-		<input type="radio" id="성산" name="region" value="'성산'">성산<br>
+		<input type="radio" id="성산읍" name="region" value="'성산읍'">성산읍<br>
 	
 	<br><header class="w3-xxxlarge w3-text-orange">분류</header>
 		<input type="radio" id="all" name="category" value="all" checked="checked">전체<br>
