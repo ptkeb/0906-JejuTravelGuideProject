@@ -4,7 +4,7 @@
 
 <table border="1" style="margin-left: auto; margin-right: auto; width:auto; font-family:Cute font; text-align: center; font-size:32px; background-color:#EEFFF2" >
 <tr> 
-<th>이름</th><th>이름전체</th><th>지역</th><th>분류</th><th>사진경로</th>
+<th style="width:100px">이름</th><th style="width:200px">이름전체</th><th style="width:100px">지역</th><th style="width:100px">분류</th><th style="width:500px">사진경로</th>
 <tr> 
 <td>${requestScope.id}</td>
 <td>${requestScope.name}</td>

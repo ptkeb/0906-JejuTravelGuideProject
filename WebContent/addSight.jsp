@@ -50,7 +50,7 @@ body {font-size:24px;}
 		
 	<header class="w3-xxxlarge w3-text-orange">이미지 URL</header>
 		<input type="search" class="w3-input w3-border" id="imagePath" name="imagePath" placeholder="해당 이미지의 url을 입력해주세요(이미지주소)(1000byte까지)" required>
-			
+		
 		<button type="submit" class="w3-button w3-block w3-padding-large w3-orange w3-margin-bottom">등록하기</button>
 	</form>
 	

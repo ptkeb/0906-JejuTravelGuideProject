@@ -15,7 +15,7 @@ public class SightDAO {
 	public static List<SightDTO> selectAll() throws SQLException {
 		EntityManager em = DBUtil.getEntityManager();
 		List<SightDTO> all = null;
-		System.out.println(1);
+		System.out. println(1);
 
 		try {
 			all = (List<SightDTO>) em.createQuery("select s from Sight s").getResultList();
@@ -134,6 +134,7 @@ public class SightDAO {
 	public static void insert(String id, String name, String Region, String Category, String url) throws SQLException {
 		EntityManager em = DBUtil.getEntityManager();
 		EntityTransaction tx = em.getTransaction();
+		
 		try {
 			if (em.find(Sight.class, id) == null) {
 				tx.begin();
@@ -145,10 +146,12 @@ public class SightDAO {
 				System.out.println("망했어요");
 				System.out.println(em.find(Sight.class, id));
 			}
+		} catch(Exception e) {
+				tx.rollback();
 		} finally {
 			em.close();
 			em = null;
 		}
-
+	
 	}
 }

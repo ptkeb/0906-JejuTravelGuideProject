@@ -43,7 +43,7 @@ body {font-size:24px;}
 	
 	<br><header class="w3-xxxlarge w3-text-orange">분류</header>
 		<input type="radio" id="all" name="category" value="all" checked="checked">전체<br>
-		<input type="radio" id="자연" name="category" value="'자연'">대충 자연명소<br>
+		<input type="radio" id="자연" name="category" value="'자연'">자연명소<br>
 		<input type="radio" id="명소" name="category" value="'명소'">관광명소<br>
 		<input type="radio" id="맛집" name="category" value="'맛집'">식당<br>
 		<input type="radio" id="숙박" name="category" value="'숙박'">숙박업소<br>

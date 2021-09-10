@@ -80,7 +80,7 @@ public class SearchServlet extends HttpServlet {
 			} else {
 				System.out.println("아마도 클릭 안하신듯 / 예외처리 하세요");
 			}
-			
+		
 		} else {
 			if(region != null) {
 				out.print(region + category + search);
