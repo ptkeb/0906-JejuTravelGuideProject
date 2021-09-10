@@ -1,68 +1,68 @@
 package model.dto;
 
 public class SightDTO {
-		private String sightId;
-		private String sightName;
-		private String sightRegion;
-		private String sightCategory;
-		private String imagePath;
-		
-		public SightDTO() {}
+	private String sightId;
+	private String sightName;
+	private String sightRegion;
+	private String sightCategory;
+	private String imagePath;
 
-		public String getSightId() {
-			return sightId;
-		}
+	public SightDTO() {
+	}
 
-		public void setSightId(String sightId) {
-			this.sightId = sightId;
-		}
+	public String getSightId() {
+		return sightId;
+	}
 
-		public String getSightName() {
-			return sightName;
-		}
+	public void setSightId(String sightId) {
+		this.sightId = sightId;
+	}
 
-		public void setSightName(String sightName) {
-			this.sightName = sightName;
-		}
+	public String getSightName() {
+		return sightName;
+	}
 
-		public String getSightRegion() {
-			return sightRegion;
-		}
+	public void setSightName(String sightName) {
+		this.sightName = sightName;
+	}
 
-		public void setSightRegion(String sightRegion) {
-			this.sightRegion = sightRegion;
-		}
+	public String getSightRegion() {
+		return sightRegion;
+	}
 
-		public String getSightCategory() {
-			return sightCategory;
-		}
+	public void setSightRegion(String sightRegion) {
+		this.sightRegion = sightRegion;
+	}
 
-		public void setSightCategory(String sightCategory) {
-			this.sightCategory = sightCategory;
-		}
+	public String getSightCategory() {
+		return sightCategory;
+	}
 
-		public String getImagePath() {
-			return imagePath;
-		}
+	public void setSightCategory(String sightCategory) {
+		this.sightCategory = sightCategory;
+	}
 
-		public void setImagePath(String imagePath) {
-			this.imagePath = imagePath;
-		}
+	public String getImagePath() {
+		return imagePath;
+	}
 
-		public SightDTO(String sightId, String sightName, String sightRegion, String sightCategory, String imagePath) {
-			super();
-			this.sightId = sightId;
-			this.sightName = sightName;
-			this.sightRegion = sightRegion;
-			this.sightCategory = sightCategory;
-			this.imagePath = imagePath;
-		}
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
+	}
 
-		@Override
-		public String toString() {
-			return "SightDTO [sightId=" + sightId + ", sightName=" + sightName + ", sightRegion=" + sightRegion
-					+ ", sightCategory=" + sightCategory + ", imagePath=" + imagePath + "]";
-		}
-		
-		
+	public SightDTO(String sightId, String sightName, String sightRegion, String sightCategory, String imagePath) {
+		super();
+		this.sightId = sightId;
+		this.sightName = sightName;
+		this.sightRegion = sightRegion;
+		this.sightCategory = sightCategory;
+		this.imagePath = imagePath;
+	}
+
+	@Override
+	public String toString() {
+		return "SightDTO [sightId=" + sightId + ", sightName=" + sightName + ", sightRegion=" + sightRegion
+				+ ", sightCategory=" + sightCategory + ", imagePath=" + imagePath + "]";
+	}
+
 }

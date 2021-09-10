@@ -28,7 +28,7 @@ body {font-size:24px;}
 <body style="font-family:Cute font; text-align: center; font-size:32px; background-color:#EEFFF2">
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
-					<a href="seongsan.jsp" style="font-size:100px; text-decoration: none;">성산<br>
+					<a href="seongsan.jsp" style="font-size:100px; text-decoration: none;">성산읍<br>
 					<img alt="성산일출봉" src="images/성산일출봉.png" style="width: 1000px; height: auto;"></a><br>
 					<br>
 					<hr style="width:auto;border:4px solid orange" class="w3-round">

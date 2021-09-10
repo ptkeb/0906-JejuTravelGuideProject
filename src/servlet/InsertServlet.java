@@ -17,7 +17,6 @@ import model.dao.SightDAO;
  */
 
 @WebServlet("/insertServ")
-
 public class InsertServlet extends HttpServlet {
 
 	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

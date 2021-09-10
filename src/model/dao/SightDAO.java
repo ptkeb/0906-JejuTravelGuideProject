@@ -42,13 +42,13 @@ public class SightDAO {
 		return all;
 	}
 
-	public static List<SightDTO> selectRegionall(String Category, String SearchString) throws SQLException {
+	public static List<SightDTO> selectRegionall(String category, String searchString) throws SQLException {
 		EntityManager em = DBUtil.getEntityManager();
 		List<SightDTO> some = null;
 		System.out.println(3);
 
 		try {
-			some = (List<SightDTO>) em.createQuery("select s from Sight s where sightCategory= " + Category + " and sightname like '" + SearchString + "%' or sightname like '%" + SearchString + "' or sightname like '%" + SearchString + "%'or sightcategory like '" + SearchString + "%' or sightcategory like '%" + SearchString + "' or sightcategory like '%" + SearchString + "%'").getResultList();
+			some = (List<SightDTO>) em.createQuery("select s from Sight s where sightCategory= " + category + " and sightname like '" + searchString + "%' or sightname like '%" + searchString + "' or sightname like '%" + searchString + "%'or sightcategory like '" + searchString + "%' or sightcategory like '%" + searchString + "' or sightcategory like '%" + searchString + "%'").getResultList();
 		} finally {
 			em.close();
 			em = null;
@@ -146,6 +146,7 @@ public class SightDAO {
 				System.out.println("망했어요");
 				System.out.println(em.find(Sight.class, id));
 			}
+	
 		} catch(Exception e) {
 				tx.rollback();
 		} finally {

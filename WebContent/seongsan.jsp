@@ -26,7 +26,7 @@
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
 
 
-	<h1 style="font-family:Stylish; font-size:96px">제주 성산</h1> <br>
+	<h1 style="font-family:Stylish; font-size:96px">성산읍</h1> <br>
 	<img alt="제주마을지도_성산읍" src="images/제주마을지도_성산읍.jpg" style="width: 1000px; height: auto;">
 	<br><hr><br>
 	
